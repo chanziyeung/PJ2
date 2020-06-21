@@ -1,0 +1,354 @@
+
+.header {
+    width: 1000px;
+    margin: -16px auto;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    background-color: black;
+}
+
+.nav {
+    float: right;
+    margin-right: 460px;
+    z-index: 100;
+}
+
+.nav li, .nav1 li {
+    float: left;
+    margin: 0 10px 0;
+}
+.nav #Browse{
+    background-color: darkgrey;
+}
+.nav a {
+    padding-top: 15px;
+    padding-bottom: 14px;
+    text-align: center;
+    width: 80px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font: bold 18px Georgia;
+}
+
+/*nav1 */
+
+.nav1 {
+    float: right;
+    margin-right: 0;
+    position: relative;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.nav1 a {
+    padding-top: 15px;
+    padding-bottom: 16px;
+    text-align: center;
+    width: 150px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font: bold 18px Georgia;
+    position: relative;
+}
+
+.nav1 span a:after {
+    content: " ";
+    display: inline-block;
+    border-bottom: solid 6px #fff;
+    border-left: solid 4px transparent;
+    border-right: solid 4px transparent;
+    vertical-align: 3px;
+    margin-left: 10px;
+}
+
+.nav1-content {
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+}
+
+.nav1-content li {
+    margin-bottom: -26px;
+    margin-top: 10px;
+    padding: 0 0 0;
+}
+
+.nav1-content li:first-child:before {
+    content: " ";
+    margin: 0 auto; /*居中*/
+    display: block; /*独占一行*/
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg); /*一个正方形倾斜四十五度就是三角了但是要把下半部分藏起来*/
+    position: relative;
+    top: -20px; /*果断的露出上半部分*/
+}
+
+.nav1-content a {
+    color: #888;
+    line-height: 46px;
+    border-bottom: solid 1px #eee;
+    font-size: 14px;
+    display: block;
+    background-color: white;
+    position: relative;
+}
+
+.nav1-content a:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+.nav1:hover .nav1-content {
+    display: block;
+}
+
+.nav1-content li:first-child a {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: -20px;
+}
+
+.nav1-content li:last-child a {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: none;
+}
+
+.nav1-content li:hover a {
+    background-color: black;
+    color: #fff;
+}
+
+.nav1:hover a:after {
+    transform: rotate(180deg);
+}
+
+.nav a:hover, .nav1 a:hover, .nav1:hover .nav1 li {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+.content {
+    width: 1000px;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px auto 20px;
+}
+
+
+.aside {
+    width: 280px;
+    display: block;
+    float: left;
+
+    overflow: hidden;
+}
+
+.search {
+    width: 278px;
+    margin-bottom: 30px;
+}
+
+.search_title, .hotcontent_title, .hotcountry_title , .hotcity_title{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height: 36px;
+    width: 275px;
+    background-color: #f5f5f5;
+    border: 1px solid;
+}
+
+.search_title span, .hotcontent_title span, .hotcountry span , .hotcity span {
+    margin-left: 10px;
+    line-height: 36px;
+
+}
+.input_text {
+    border-bottom-left-radius: 5px;
+    width: 228px;
+    height: 42px;
+    border: 1px solid green;
+    padding: 0;
+    text-indent: 10px;
+    outline: none;
+    float: left;
+}
+
+.input_sub {
+    outline: none;
+    width: 50px;
+    height: 42px;
+    background: green;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    border-bottom-right-radius: 5px;
+}
+
+
+.hotcontent {
+    width: 278px;
+    margin-bottom: 30px;
+}
+
+.hotcity{
+    width: 278px;
+}
+
+.hotcountry {
+    width: 278px;
+    margin-bottom: 30px;
+}
+
+.hotcontent td, .hotcountry td , .hotcity td {
+    width: 275px;
+    border: 1px solid grey;
+    line-height: 35px;
+    border-collapse: collapse;
+    margin-left: 5px;
+}
+
+.hotcontent td span, .hotcountry td span , .hotcity td span{
+    margin-left: 10px;
+}
+
+.hotcontent td a, .hotcountry td a , .hotcity td a{
+    text-decoration: none;
+    color: cornflowerblue;
+    cursor: pointer;
+}
+
+.hotcontent td :hover ,.hotcountry td :hover , .hotcity td :hover{
+    text-decoration: underline;
+    color: black;
+}
+
+
+.filter {
+    width: 700px;
+    height: 790px;
+    display: block;
+    float: right;
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.filter_title {
+    width: 700px;
+    background-color: #f5f5f5;
+    height: 36px;
+}
+
+.filter_title span{
+    margin-left: 10px;
+    line-height: 36px;
+}
+
+.filter_content {
+    width: 700px;
+    height: 60px;
+    border-bottom: 1px solid;
+    display: block;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+
+.filter1 ,.filter2 ,.filter3 {
+    float: left;
+    margin: 10px 15px 10px 15px;
+}
+
+.filter1 select, .filter2 select, .filter3 select {
+    width: 130px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    background-color: #f5f5f5;
+}
+
+
+.input_filter {
+    margin: 10px 15px 10px 40px;
+    outline: none;
+    background: green;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+    width: 130px;
+    height: 36px;
+}
+
+.filter .box1, .filter .box2, .filter .box3, .filter .box4, .filter .box5, .filter .box6, .filter .box7, .filter .box8,
+.filter .box9, .filter .box10, .filter .box11, .filter .box12, .filter .box13, .filter .box14, .filter .box15, .filter .box16 {
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    float: left;
+    display: block;
+}
+.image_box img{
+    width: 150px;
+    height: 150px;
+}
+
+.filter .box4,.filter .box8,.filter .box12,.filter .box16{
+    margin-right: 20px;
+}
+
+
+
+.page{
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+
+}
+.page a{
+    text-decoration: none;
+    color:black;;
+}
+.page_current{
+    /*color:#ff6600;*/
+    padding:4px 10px 5px;
+    font-size:14PX;
+}
+
+.page a,.page_prev,.page_next,.page_first,.page_last{
+    text-decoration: none;
+    border:1px solid #ccc;
+    border-radius:3px;
+    padding:4px 10px 5px;
+    font-size:14PX;/*修复行内元素之间空隙间隔*/
+    margin-right:10px;
+}
+.page_prev, .page_next, .page_first , .page_last, .page_other{
+    color:black;
+}
+
+.page_prev:hover, .page_next:hover, .page_first:hover , .page_last:hover , .page a:hover{
+    background-color: lightgrey;
+}
+
+
+
+.footer{
+    margin:30px auto;
+    width: 1000px;
+}
+.footer span{
+    margin-left: 20px;
+}

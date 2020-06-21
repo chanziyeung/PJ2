@@ -1,0 +1,96 @@
+.filter1 {
+    background-color: #41b1d9;
+    position: relative;
+}
+
+.filter1 a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    width: 150px;
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-family: Georgia;
+    position: relative;
+}
+
+.filter1 span a:after {
+    content: " ";
+    display: inline-block;
+    border-bottom: solid 6px black;
+    border-left: solid 4px transparent;
+    border-right: solid 4px transparent;
+    vertical-align: 3px;
+    margin-left: 10px;
+}
+
+.filter1_content {
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+}
+
+.filter1_content li {
+    margin-bottom: -26px;
+    margin-top: 10px;
+    padding: 16px 10px 0;
+}
+
+.filter1_content li:first-child:before {
+    content: " ";
+    margin: 0 auto; /*居中*/
+    display: block; /*独占一行*/
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg); /*一个正方形倾斜四十五度就是三角了但是要把下半部分藏起来*/
+    position: relative;
+    top: -20px; /*果断的露出上半部分*/
+}
+
+.filter1_content a {
+    color: #888;
+    line-height: 46px;
+    border-bottom: solid 1px #eee;
+    font-size: 14px;
+    display: block;
+    background-color: white;
+    position: relative;
+}
+
+.filter1_content a:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+
+.filter1:hover .filter1_content {
+    display: block;
+}
+
+.filter1_content li:first-child a {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: -10px;
+}
+
+.filter1_content li:last-child a {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: none;
+}
+
+.filter1_content li:hover a {
+    background-color: #41b1d9;
+    color: #fff;
+}
+
+.filter1:hover a:after {
+    transform: rotate(180deg);
+}
+
+.filter1 a:hover, .filter1:hover .nav1 li {
+    color: lightgray;
+    text-decoration: underline;
+}

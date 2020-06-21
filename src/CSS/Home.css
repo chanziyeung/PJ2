@@ -1,0 +1,313 @@
+
+.w {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    background-color: black;
+}
+
+.nav {
+    float: right;
+    margin-right: 460px;
+    z-index: 100;
+}
+
+.nav li, .nav1 li {
+    float: left;
+    margin: 0 10px 0;
+}
+
+.nav #Home {
+    background-color: darkgrey;
+}
+
+.nav a {
+    padding-top: 15px;
+    padding-bottom: 16px;
+    text-align: center;
+    width: 80px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font: bold 18px Georgia;
+}
+
+/*nav1 */
+
+.nav1 {
+    float: right;
+    margin-right: 0;
+    /*background-color: #41b1d9;*/
+    position: relative;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.nav1 a {
+    padding-top: 15px;
+    padding-bottom: 16px;
+    text-align: center;
+    width: 150px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font: bold 18px Georgia;
+    position: relative;
+}
+
+.nav1 span a:after {
+    content: " ";
+    display: inline-block;
+    border-bottom: solid 6px #fff;
+    border-left: solid 4px transparent;
+    border-right: solid 4px transparent;
+    vertical-align: 3px;
+    margin-left: 10px;
+}
+
+.nav1-content {
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+}
+
+.nav1-content li {
+    margin-bottom: -26px;
+    margin-top: 10px;
+    padding: 0 0 0;
+}
+
+.nav1-content li:first-child:before {
+    content: " ";
+    margin: 0 auto; /*居中*/
+    display: block; /*独占一行*/
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg); /*一个正方形倾斜四十五度就是三角了但是要把下半部分藏起来*/
+    position: relative;
+    top: -20px; /*果断的露出上半部分*/
+}
+
+.nav1-content a {
+    color: #888;
+    line-height: 46px;
+    border-bottom: solid 1px #eee;
+    font-size: 14px;
+    display: block;
+    background-color: white;
+    position: relative;
+}
+
+.nav1-content a:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+.nav1:hover .nav1-content {
+    display: block;
+}
+
+.nav1-content li:first-child a {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: -20px;
+}
+
+.nav1-content li:last-child a {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: none;
+}
+
+.nav1-content li:hover a {
+    /*background-color: #41b1d9;*/
+    background-color: black;
+    color: #fff;
+}
+
+.nav1:hover a:after {
+    transform: rotate(180deg);
+}
+
+.nav a:hover, .nav1 a:hover, .nav1:hover .nav1 li {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+.content {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.banner {
+    width: 1000px;
+    margin:0 auto;
+}
+
+.image1 img {
+
+    width: 1000px;
+    height: 700px;
+}
+
+.content h1 {
+    text-align: center;
+    font: bold 24px Georgia;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+}
+
+.image_box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.content .box1, .content .box2, .content .box3, .content .box4, .content .box5, .content .box6 {
+    border-radius: 5px 5px 5px 5px;
+    background-color: lightgrey;
+    text-align: center;
+    width: 200px;
+    height: 205px;
+    float: left;
+    position: relative;
+}
+
+.content .box1 {
+margin-left: 100px;
+}
+
+.content .box2 {
+    margin: 0 100px;
+}
+
+.content .box3 {
+
+}
+
+.content .box4 {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.content .box5 {
+    margin: 20px 100px;
+}
+
+.content .box6 {
+    margin-top: 20px;
+}
+
+.content h1 {
+    color: cornflowerblue;
+    font: 21px Georgia;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.content .p1 {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font: 15px Georgia;
+}
+
+.footer {
+
+    margin: 0 auto;
+    width: 1000px;
+    height: 150px;
+    background-color: #333;
+}
+
+#top {
+    background-image: url("../../Image/top.png");
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+#top:hover {
+    background-position: -25px;
+}
+
+.reload {
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+
+#button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    float: right;
+    margin-top: 75px;
+}
+
+.footer span {
+    margin: 0 auto 0 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer_content_left {
+    width: 200px;
+
+    float: left;
+    margin-left: 180px;
+    margin-top: 20px;
+}
+
+.footer_content_left p, .footer_content_middle p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer_content_left a, .footer_content_middle a {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+.footer_content_middle {
+    margin-top: 20px;
+    width: 200px;
+    float: left;
+    margin-left: 20px;
+}
+
+.footer_content_right {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 200px;
+}
+
+.footer_content_right img {
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+#button a {
+    margin-bottom: 10px;
+}

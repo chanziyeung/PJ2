@@ -1,0 +1,277 @@
+.w{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    background-color: black;
+}
+
+.nav {
+    float: right;
+    margin-right: 460px;
+}
+
+.nav li, .nav1 li {
+    float: left;
+    margin: 0 10px 0;
+}
+
+.nav a {
+    padding-top: 15px;
+    padding-bottom: 16px;
+    text-align: center;
+    width: 80px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font: bold 18px Georgia;
+}
+
+/*nav1 */
+
+.nav1 {
+    float: right;
+    margin-right: 0;
+    /*background-color: #41b1d9;*/
+    position: relative;
+    cursor: pointer;
+}
+
+.nav1 a {
+    padding-top: 15px;
+    padding-bottom: 16px;
+    text-align: center;
+    width: 150px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font: bold 18px Georgia;
+    position: relative;
+}
+
+.nav1 span a:after {
+    content: " ";
+    display: inline-block;
+    border-bottom: solid 6px #fff;
+    border-left: solid 4px transparent;
+    border-right: solid 4px transparent;
+    vertical-align: 3px;
+    margin-left: 10px;
+}
+
+.nav1-content {
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+}
+
+.nav1-content li {
+    margin-bottom: -26px;
+    margin-top: 10px;
+
+}
+
+.nav1-content li:first-child:before {
+    content: " ";
+    margin: 0 auto; /*居中*/
+    display: block; /*独占一行*/
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg); /*一个正方形倾斜四十五度就是三角了但是要把下半部分藏起来*/
+    position: relative;
+    top: -20px; /*果断的露出上半部分*/
+}
+
+.nav1-content a {
+    color: #888;
+    line-height: 46px;
+    border-bottom: solid 1px #eee;
+    font-size: 14px;
+    display: block;
+    background-color: white;
+    position: relative;
+}
+
+.nav1-content a:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+.nav1:hover .nav1-content {
+    display: block;
+}
+
+.nav1-content li:first-child a {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: -20px;
+}
+
+.nav1-content li:last-child a {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: none;
+}
+
+.nav1-content li:hover a {
+    /*background-color: #41b1d9;*/
+    background-color: black;
+    color: #fff;
+}
+
+.nav1:hover a:after {
+    transform: rotate(180deg);
+}
+
+.nav a:hover, .nav1 a:hover, .nav1:hover .nav1 li {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+.content {
+    width: 1000px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 10px auto 20px;
+}
+.upload{
+    width: 1000px;
+}
+
+#upload_box{
+    width: 350px;
+    height: 350px;
+    margin:0 auto;
+}
+.upload #upload_box h1{
+    position: absolute;
+    text-align: center;
+    bottom: 300px;
+    right:670px;
+    z-index: -1;
+}
+
+
+.upload #upload_box img {
+    width: 350px;
+    height: 350px;
+    border: 1px solid grey;
+    margin-top: 20px;
+    z-index: 1;
+
+}
+.upload_button{
+    text-align: center;
+    margin-left: 20px;
+}
+#file{
+    margin: 50px auto 0 60px;
+}
+#btn{
+    width: 200px;
+    height: 50px;
+    border: 1px solid grey;
+    background-color: green;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    margin: 30px auto 0;
+    cursor: pointer;
+
+}
+.upload_photo{
+    outline: none;
+    background: green;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 130px;
+    height: 36px;
+    margin:1px 1px 1px 1px;
+}
+
+.upload_content{
+    margin-top: 20px;
+}
+
+#choices{
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    background-color: #f5f5f5;
+}
+.c_input{
+    border-radius: 5px;
+    height: 40px;
+
+}
+
+.content .content_title{
+    height: 40px;
+    background-color: #f5f5f5;
+}
+.content_title span {
+    margin-left: 20px;
+    line-height: 40px;
+}
+
+.input_box {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+    width: 950px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.textarea_box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    width: 950px;
+    border-radius: 5px;
+    height: 60px;
+    outline: none;
+}
+
+.input_filter {
+    margin: 10px 0 10px 20px;
+    outline: none;
+    background: green;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 130px;
+    height: 36px;
+}
+.upload_content span{
+    margin-left: 20px;
+}
+.p1{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer{
+    margin:30px auto;
+    width: 1000px;
+}
+.footer span{
+    margin-left: 20px;
+}

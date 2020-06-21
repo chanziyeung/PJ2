@@ -1,0 +1,134 @@
+body {
+    /*颜色这个看个人喜好*/
+    background: darkslategrey;
+    /*字体这个看个人喜好*/
+}
+table{
+    margin: auto;
+}
+
+.maincontent{
+    width: 350px;
+
+    background-color: darkcyan;
+    margin:0 auto;
+    border-radius: 40px;
+
+}
+.content {
+    width: 350px;
+    margin: 50px auto 10px;
+
+
+}
+.content h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 32px;
+    margin-top: 30px;
+}
+
+.logo {
+    text-align: center;
+    height: 75px;
+    margin: 0 0 25px auto;
+    padding-top: 20px;
+}
+
+.title {
+    margin-top: 1px;
+    padding-top: 1px;
+    text-align: center;
+}
+
+.h2 {
+    color: #8e8e8e;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0 40px 10px;
+    text-align: center;
+}
+.login{
+    overflow: hidden;
+    display: inline-block;
+    width: 350px;
+    margin: 60px 0 20px auto;
+}
+
+.account{
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    height: 30px;
+    align-items: center;
+}
+
+.bt{
+    margin: 10px;
+    width: 120px;
+    background-color: darkslategrey;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.bt a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+
+.form {
+    text-align: center;
+    margin: 0  auto;
+}
+.register{
+    width: 350px;
+    margin: 0  auto;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+}
+.register a{
+    text-decoration: none;
+    color: #00FFFF;
+    font-weight: bold;
+}
+
+.footer{
+    position: absolute;
+    margin:30px auto;
+    bottom: 0;
+    left: 0;
+}
+.footer span{
+    margin-left: 20px;
+}
+
+.logo img{
+    position: relative;
+    -webkit-animation-name: scaleDraw; /*关键帧名称*/
+    -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
+    -webkit-animation-iteration-count: infinite;  /*动画播放的次数*/
+    -webkit-animation-duration: 5s; /*动画所花费的时间*/
+
+}
+
+@keyframes scaleDraw {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+    0%{
+        transform: scale(1);  /*开始为原始大小*/
+    }
+    25%{
+        transform: scale(1.5); /*放大1.1倍*/
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.5);
+    }
+}

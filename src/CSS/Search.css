@@ -1,0 +1,276 @@
+
+
+.header {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    background-color: black;
+}
+
+.nav {
+    float: right;
+    margin-right: 460px;
+    z-index: 100;
+}
+
+.nav li, .nav1 li {
+    float: left;
+    margin: 0 10px 0;
+}
+.nav #Search{
+    background-color: darkgrey;
+}
+
+
+
+.nav a {
+    padding-top: 15px;
+    padding-bottom: 14px;
+    text-align: center;
+    width: 80px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font: bold 18px Georgia;
+}
+
+/*nav1 */
+
+.nav1 {
+    float: right;
+    margin-right: 0;
+    position: relative;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.nav1 a {
+    padding-top:15px;
+    padding-bottom: 16px;
+    text-align: center;
+    width: 150px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font: bold 18px Georgia;
+    position: relative;
+}
+
+.nav1 span a:after {
+    content: " ";
+    display: inline-block;
+    border-bottom: solid 6px #fff;
+    border-left: solid 4px transparent;
+    border-right: solid 4px transparent;
+    vertical-align: 3px;
+    margin-left: 10px;
+}
+
+.nav1-content {
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+}
+
+.nav1-content li {
+    margin-bottom: -26px;
+    margin-top: 10px;
+
+}
+
+.nav1-content li:first-child:before {
+    content: " ";
+    margin: 0 auto; /*居中*/
+    display: block; /*独占一行*/
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg); /*一个正方形倾斜四十五度就是三角了但是要把下半部分藏起来*/
+    position: relative;
+    top: -20px; /*果断的露出上半部分*/
+}
+
+.nav1-content a {
+    color: #888;
+    line-height: 46px;
+    border-bottom: solid 1px #eee;
+    font-size: 14px;
+    display: block;
+    background-color: white;
+    position: relative;
+}
+
+.nav1-content a:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+.nav1:hover .nav1-content {
+    display: block;
+}
+
+.nav1-content li:first-child a {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: -20px;
+}
+
+.nav1-content li:last-child a {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: none;
+}
+
+.nav1-content li:hover a {
+    background-color: black;
+    color: #fff;
+}
+
+.nav1:hover a:after {
+    transform: rotate(180deg);
+}
+
+.nav a:hover, .nav1 a:hover, .nav1:hover .nav1 li {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+.search {
+    width: 1000px;
+    height: 260px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 10px auto 20px;
+
+}
+
+.search .search_title, .result .result_title {
+    height: 40px;
+    background-color: #f5f5f5;
+}
+.search_title span , .result_title span{
+    margin-left: 20px;
+    line-height: 40px;
+}
+
+.search_box1 {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+    width: 800px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search_box2 {
+    margin-left: 20px;
+    width: 800px;
+    border-radius: 5px;
+    height: 60px;
+    outline: none;
+}
+
+.input_filter {
+    margin: 10px 0 10px 20px;
+    outline: none;
+    background: green;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 130px;
+    height: 36px;
+}
+
+.result {
+    margin: 0 auto;
+    width: 1000px;
+    height: 1050px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.image_box img{
+    width: 150px;
+    height: 150px;
+}
+
+.result_box1, .result_box2, .result_box3, .result_box4, .result_box5 {
+    width: 1000px;
+    height: 170px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.result_box5 {
+    border: 0;
+}
+
+.result_box1 img, .result_box2 img, .result_box3 img, .result_box4 img, .result_box5 img {
+    float: left;
+    margin-left: 25px;
+}
+
+.result_box1_title, .result_box2_title, .result_box3_title, .result_box4_title, .result_box5_title {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    font-weight: bold;
+}
+
+.description_box1, .description_box2, .description_box3, .description_box4, .description_box5 {
+    float: right;
+    margin: 0 40px 0 0;
+    width: 750px;
+    height: 110px;
+}
+
+.description_box1 p, .description_box2 p, .description_box3 p, .description_box4 p, .description_box5 p {
+    margin-top: 15px;
+    line-height: 25px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.page{
+    width: 1000px;
+    line-height: 50px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.page a{
+    text-decoration: none;
+    color:black;
+}
+.page_current{
+    /*color:#ff6600;*/
+    padding:4px 10px 5px;
+    font-size:14PX;
+}
+
+.page a,.page_prev,.page_next,.page_first,.page_last{
+    text-decoration: none;
+    border:1px solid #ccc;
+    border-radius:3px;
+    padding:4px 10px 5px;
+    font-size:14PX;/*修复行内元素之间空隙间隔*/
+    margin-right:10px;
+}
+.page_prev, .page_next, .page_first , .page_last, .page_other{
+    color:black;
+}
+
+.page_prev:hover, .page_next:hover, .page_first:hover , .page_last:hover , .page a:hover{
+    background-color: lightgrey;
+}
